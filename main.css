@@ -1,0 +1,23 @@
+/* Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Grid Framework */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.header { grid-area: header; }
+.left-1 { grid-area: left-1; }
+.left-2 { grid-area: left-2; }
+.main { grid-area: main; }
+.right-1 { grid-area: right-1; }
+.right-2 { grid-area: right-2; }
+.footer { grid-area: footer; }
